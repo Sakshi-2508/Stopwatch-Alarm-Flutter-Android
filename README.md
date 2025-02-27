@@ -10,10 +10,9 @@ A sleek and user-friendly **Stopwatch & Alarm App** built with Flutter. This app
 ✅ Smooth animations and transitions
 
 ## 📸 Screenshots
-| Stopwatch Screen                       | Alarm Screen || Timer Screen |
-|----------------------------------------|-------------|-------------|
-| ![Stopwatch](./screenshots/Stopwatch/Screenshot_1727329875.png) | ![Alarm](./screenshots/Stopwatch/Screenshot_1727329869.png) | ![Alarm](./screenshots/Stopwatch/Screenshot_1727329880.png)
-
+| Stopwatch Screen | Alarm Screen | Timer Screen |
+|-----------------|-------------|-------------|
+| <img src="./screenshots/Stopwatch/Screenshot_1727329875.png" width="200"> | <img src="./screenshots/Stopwatch/Screenshot_1727329869.png" width="200"> | <img src="./screenshots/Stopwatch/Screenshot_1727329880.png" width="200"> |
 ## 🚀 Installation
 1. **Clone the Repository**
    ```bash
