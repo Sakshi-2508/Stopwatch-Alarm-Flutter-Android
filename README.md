@@ -2,6 +2,9 @@
 
 A sleek and user-friendly **Stopwatch & Alarm App** built with Flutter. This app lets you measure time accurately using a stopwatch and set alarms to stay on schedule. 🚀
 
+## 📥 Download
+[![Download StopWatch App](https://img.shields.io/badge/Download-StopWatch-blue)](https://github.com/Sakshi-2508/Stopwatch-Alarm-Flutter-Android/raw/refs/heads/main/apk/demo.apk)
+
 ## 📌 Features
 ✅ Stopwatch with start, stop, and reset functionality
 ✅ Timer countdown feature
