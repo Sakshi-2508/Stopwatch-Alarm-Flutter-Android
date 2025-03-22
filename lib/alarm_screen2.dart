@@ -1,6 +1,7 @@
-// AlarmScreen implementation
+// Import necessary package for UI components
 import 'package:flutter/material.dart';
 
+// Stateful widget for the AlarmScreen
 class AlarmScreen2 extends StatefulWidget {
   const AlarmScreen2({super.key});
 
@@ -9,9 +10,13 @@ class AlarmScreen2 extends StatefulWidget {
 }
 
 class _AlarmScreen2State extends State<AlarmScreen2> {
+  // Stores the selected alarm time, initialized with the current time
   TimeOfDay selectedTime = TimeOfDay.now();
+
+  // Boolean to track whether the alarm is set or not
   bool isAlarmSet = false;
 
+  // Function to open a time picker dialog and update the selected time
   Future<void> _selectTime(BuildContext context) async {
     final TimeOfDay? picked = await showTimePicker(
       context: context,
@@ -30,6 +35,7 @@ class _AlarmScreen2State extends State<AlarmScreen2> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          // Display selected alarm time
           Text(
             selectedTime.format(context),
             style: const TextStyle(
@@ -39,6 +45,8 @@ class _AlarmScreen2State extends State<AlarmScreen2> {
             ),
           ),
           const SizedBox(height: 20),
+
+          // Button to open time picker
           ElevatedButton(
             onPressed: () => _selectTime(context),
             style: ElevatedButton.styleFrom(
@@ -51,6 +59,8 @@ class _AlarmScreen2State extends State<AlarmScreen2> {
             child: const Text("Set Alarm Time"),
           ),
           const SizedBox(height: 20),
+
+          // Row with switch to turn alarm ON/OFF
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -72,12 +82,14 @@ class _AlarmScreen2State extends State<AlarmScreen2> {
             ],
           ),
           const SizedBox(height: 20),
+
+          // Row with buttons for setting and canceling the alarm
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ElevatedButton(
                 onPressed: () {
-                  // Set Alarm logic here
+                  // Logic to set the alarm goes here
                 },
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
@@ -90,7 +102,7 @@ class _AlarmScreen2State extends State<AlarmScreen2> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  // Cancel logic here
+                  // Logic to cancel the alarm goes here
                 },
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,

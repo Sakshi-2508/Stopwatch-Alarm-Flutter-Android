@@ -8,6 +8,7 @@ class StopwatchScreen extends StatefulWidget {
 }
 
 class _StopwatchScreenState extends State<StopwatchScreen> {
+  // Boolean variables to store various user preferences
   bool upcomingAlarmNotification = true;
   bool showWeather = true;
   bool showTemperature = false;
@@ -19,8 +20,8 @@ class _StopwatchScreenState extends State<StopwatchScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Clock Settings'),
-        backgroundColor: Colors.black,
+        title: const Text('Clock Settings'), // Title of the settings screen
+        backgroundColor: Colors.black, // Background color for the app bar
       ),
       body: ListView(
         children: [
@@ -43,7 +44,7 @@ class _StopwatchScreenState extends State<StopwatchScreen> {
               },
             ),
           ),
-          const Divider(color: Colors.grey),
+          const Divider(color: Colors.grey), // Divider for better UI separation
 
           // World clock section
           ListTile(
@@ -76,7 +77,7 @@ class _StopwatchScreenState extends State<StopwatchScreen> {
           ),
           const Divider(color: Colors.grey),
 
-          // Timer section
+          // Timer settings section
           ListTile(
             title: const Text(
               'Sound',
@@ -121,7 +122,7 @@ class _StopwatchScreenState extends State<StopwatchScreen> {
           ),
           const Divider(color: Colors.grey),
 
-          // Privacy and more settings
+          // Privacy and customization settings
           ListTile(
             title: const Text(
               'Permissions',
